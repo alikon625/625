@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Auto - Lux Premium Автосервис</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<a href="https://wa.me/77762744221" class="whatsapp-btn" target="_blank" title="WhatsApp жазу">💬</a>
+<body>
+<!-- Навигация -->
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Басты бет</a></li>
+      <li><a href="#services">Қызметтер</a></li>
+      <li><a href="#team">Біздін команда</a></li>
+      <li><a href="#contact">Байланыс</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Royal Auto</h1>
+    <!-- Батырма осылай өзгертіледі -->
+    <button class="btn hero-btn" onclick="openBooking('Онлайн брондау')">Забронировать</button>
+  </div>
+</section>
+<!-- Артықшылықтар -->
+<section id="advantages">
+  <h2 class="section-title">Артықшылықтар</h2>
+  <div class="advantages-container">
+    <div class="adv-card">
+      <img src="images/icon1.png" alt="">
+      <p>Сертификатталған мамандар</p>
+    </div>
+    <div class="adv-card">
+      <img src="images/icon2.png" alt="">
+      <p>Жылдам қызмет көрсету</p>
+    </div>
+    <div class="adv-card">
+      <img src="images/icon3.png" alt="">
+      <p>Тек сапалы бөлшектер</p>
+    </div>
+    <div class="adv-card">
+      <img src="images/icon4.png" alt="">
+      <p>Кепілдік беріледі</p>
+    </div>
+  </div>
+</section>
+
+<!-- Қызметтер -->
+<section id="services">
+  <h2 class="section-title">Қызметтер</h2>
+  <div class="services-container">
+    <!-- Карточкалар -->
+    <div class="service-card">
+      <img src="images/service1.jpg" alt="Замена масла">
+      <h3>Замена масла</h3>
+      <p>Быстрая замена масла с использованием качественных материалов.</p>
+      <p class="price">От 5000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Замена масла')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service2.jpg" alt="Электрика">
+      <h3>Электрика</h3>
+      <p>Диагностика и ремонт электрической системы автомобиля.</p>
+      <p class="price">От 8000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Электрика')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service3.jpg" alt="Кузовной работы">
+      <h3>Кузовной работы</h3>
+      <p>Ремонт и восстановление кузова автомобиля после повреждений.</p>
+      <p class="price">От 15000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Кузовной работы')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service4.jpg" alt="Тех осмотр">
+      <h3>Тех осмотр</h3>
+      <p>Полная диагностика автомобиля для безопасной эксплуатации.</p>
+      <p class="price">От 3000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Тех осмотр')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service5.jpg" alt="Шиномонтаж">
+      <h3>Шиномонтаж</h3>
+      <p>Быстрая смена и балансировка шин автомобиля.</p>
+      <p class="price">От 2000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Шиномонтаж')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service6.jpg" alt="Ремонт АКПП">
+      <h3>Ремонт АКПП</h3>
+      <p>Профессиональный ремонт автоматической коробки передач.</p>
+      <p class="price">От 25000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Ремонт АКПП')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service7.jpg" alt="Полировка авто">
+      <h3>Полировка авто</h3>
+      <p>Восстановление блеска кузова с использованием профессиональных средств.</p>
+      <p class="price">От 7000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Полировка авто')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service8.jpg" alt="Тормозной системы">
+      <h3>Тормозной системы</h3>
+      <p>Диагностика и ремонт тормозной системы для безопасности движения.</p>
+      <p class="price">От 6000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Тормозной системы')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service9.jpg" alt="Покраска авто">
+      <h3>Покраска авто</h3>
+      <p>Профессиональная покраска автомобиля с использованием качественных красок.</p>
+      <p class="price">От 30000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Покраска авто')">Забронировать</button>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service10.jpg" alt="Диагностика">
+      <h3>Диагностика</h3>
+      <p>Полная диагностика автомобиля, выявление всех неисправностей.</p>
+      <p class="price">От 4000 ₸</p>
+      <button class="btn-book" onclick="openBooking('Диагностика')">Забронировать</button>
+    </div>
+  </div>
+</section>
+<!-- Статистика -->
+<section id="stats">
+  <h2 class="section-title">Статистика</h2>
+  <div class="stats-container">
+    <div class="stat">
+      <span class="counter" data-target="5">0</span>+ жыл тәжірибе
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="2000">0</span>+ жөнделген авто
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="95">0</span>% клиент қанағаттануы
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="10">0</span> кәсіби маман
+    </div>
+  </div>
+</section>
+
+<!-- Брондау форма модал -->
+<div id="bookingModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeBooking()">&times;</span>
+    <h2 id="modalServiceName">Брондау</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Аты-жөні" required>
+      <input type="tel" id="phone" placeholder="Телефон" required>
+      <input type="text" id="carModel" placeholder="Көлік маркасы" required>
+      <input type="text" id="carYear" placeholder="Жылы" required>
+      <input type="date" id="date" required>
+      <input type="time" id="time" required>
+      <input type="hidden" id="serviceName">
+      <button type="submit">WhatsApp-қа жіберу</button>
+      <button type="button" onclick="closeBooking()">Назад</button>
+    </form>
+  </div>
+</div>
+
+<!-- Біздін команда -->
+<section id="team">
+  <h2 class="section-title">Біздін команда</h2>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="images/team1.jpg" alt="Механик 1">
+      <h3>Айдос С.</h3>
+      <p>Сертификатталған механик, 10 жыл тәжірибе</p>
+    </div>
+    <div class="team-member">
+      <img src="images/team2.jpg" alt="Механик 2">
+      <h3>Меруерт Ж.</h3>
+      <p>Электрика және диагностика маманы</p>
+    </div>
+    <div class="team-member">
+      <img src="images/team3.jpg" alt="Механик 3">
+      <h3>Руслан Қ.</h3>
+      <p>Кузовной работы және покраска бойынша маман</p>
+    </div>
+  </div>
+</section>
+
+<!-- Клиенттердің пікірі (Carousel) -->
+<section id="testimonials">
+  <h2 class="section-title">Клиенттердің пікірі</h2>
+  <div class="testimonial-carousel">
+    <div class="testimonial active">
+      <p>"Royal Auto қызметі керемет! Барлығы жылдам және сапалы."</p>
+      <span>- Бекзат А.</span>
+    </div>
+    <div class="testimonial">
+      <p>"Менің көлігімді толық тексеріп, барлығын жөндеді."</p>
+      <span>- Аружан С.</span>
+    </div>
+    <div class="testimonial">
+      <p>"Премиум сервис, менеджерлер өте сыпайы."</p>
+      <span>- Еркебулан М.</span>
+    </div>
+  </div>
+</section>
+
+<!-- Байланыс -->
+<section id="contact">
+  <h2 class="section-title">Байланыс</h2>
+  
+  <p>Телефондар:</p>
+  <ul class="contact-phones">
+    <li>+7 776 274 4221 (WhatsApp)</li>
+    <li>+7 777 777 7777</li>
+    <li>+7 702 220 011</li>
+  </ul>
+
+<p class="address">Адрес: Иманова 50</p>
+
+  <div id="map">
+    <iframe 
+      src="https://www.google.com/maps?q=Иманова+50&output=embed" 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+<script>
+function openBooking(serviceName) {
+  document.getElementById("bookingModal").style.display = "flex";
+  document.getElementById("modalServiceName").innerText = serviceName;
+  document.getElementById("serviceName").value = serviceName;
+}
+
+function closeBooking() {
+  document.getElementById("bookingModal").style.display = "none";
+}
+
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const car = document.getElementById("carModel").value;
+  const year = document.getElementById("carYear").value;
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  const service = document.getElementById("serviceName").value;
+
+  const message = `🚗 *Royal Auto брондау*\n\n` +
+                  `👤 Аты: ${name}\n` +
+                  `📞 Телефон: ${phone}\n` +
+                  `🚘 Көлік: ${car} (${year})\n` +
+                  `🛠 Қызмет: ${service}\n` +
+                  `📅 Күні: ${date}\n` +
+                  `⏰ Уақыты: ${time}`;
+
+  const whatsappNumber = "77762744221";
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const testimonials = document.querySelectorAll('.testimonial');
+  let currentIndex = 0;
+
+  function showTestimonial(index) {
+    testimonials.forEach((t, i) => {
+      t.classList.remove('active');
+    });
+    testimonials[index].classList.add('active');
+  }
+
+  // Бастапқыда бірінші пікір көрсетіледі
+  showTestimonial(currentIndex);
+
+  // Автоматты ауыстыру әр 5 секунд сайын
+  setInterval(() => {
+    currentIndex++;
+    if(currentIndex >= testimonials.length) currentIndex = 0;
+    showTestimonial(currentIndex);
+  }, 5000);
+});
+</script>
+
+<!-- Бүкіл body-дің соңы -->
+</body>
+</html>
+
+<script src="script.js"></script>
+</body>
+</html>
